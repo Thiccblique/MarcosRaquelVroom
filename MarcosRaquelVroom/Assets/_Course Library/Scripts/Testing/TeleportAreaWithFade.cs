@@ -41,7 +41,7 @@ public class TeleportAreaWithFade : TeleportationArea
     private IEnumerator FadeSequence<T>(UnityAction<T> action, T args)
         where T : BaseInteractionEventArgs
     {
-       // fadeCanvas.QuickFadeIn();
+       fadeCanvas.QuickFadeIn();
 
         yield return fadeCanvas.CurrentRoutine;
         action.Invoke(args);
